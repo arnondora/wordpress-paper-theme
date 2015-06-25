@@ -16,8 +16,10 @@
 			<p class = "content"><?php the_excerpt(); ?></p>
 		</div>
 		<?php endwhile; else : ?>
-				<p><?php _e('No post right now.'); ?></p>
-		<?php endif; ?>
+			<div class="shadow-box block-center">
+				<center>
+					<h4 style = "margin-top:5px;">We can't found what you are looking for.</h4>
+					<p class=  "text-muted">Try other keyword or <a href="<?php echo get_option('home');?>">Go Home?</a></p>
+				</center>
+	</div>		<?php endif; ?>
 </div>
-
-<?php get_footer();?>
