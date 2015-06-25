@@ -9,7 +9,7 @@
 <?php wp_footer();?>
 </body>
 
-<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src = "<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+<script src = "<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
+<script async src = "<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 
 </html>
