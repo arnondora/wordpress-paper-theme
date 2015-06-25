@@ -3,7 +3,7 @@
 	<title>Not Found - <?php bloginfo('name'); ?></title>
 </head>
 
-<div class="container">
+<div class="container contain-content">
 	<div class="shadow-box block-center row">
 		<center>
 			<h4>Oopps!!, something goes wrong!</h4>
