@@ -1,9 +1,9 @@
-	<footer class = "footer navbar-default">
+	<div class = "footer navbar navbar-default" style="margin-bottom:0px;">
 		<div class="container">
 			<p class = "navbar-text pull-left" style = "color:#2196f3;">Copyright 2014-2015 Arnon Puitrakul all right reversed.</p>
 			<p class="navbar-text pull-right" style = "color :#2196f3;">Paper Theme by <a href="http://www.arnondora.in.th">@arnondora</a>
 		</div>
-	</footer>
+	</div>
 <?php wp_footer();?>
 </body>
 
