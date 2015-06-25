@@ -4,17 +4,14 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="x-ua-compatiible" content = "IE-edge">
 	<meta name = "viewport" content="width-device-width, initial-scale=1">
-	<link href = "<?php bloginfo('stylesheet_url');?>" rel = "stylesheet">
+	<!-- <link href = "<?php bloginfo('stylesheet_url');?>" rel = "stylesheet"> -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.min.css" type="text/css" media="all" />
 	<!-- <title><?php bloginfo('name'); ?></title> -->
 	<?php wp_head(); ?>
 	<style>
 		body
 		{
-			background-color: <?php echo of_get_option('background_colour');?>;
-		}
-		h4
-		{
-			color: <?php echo of_get_option('header_colour');?>;
+			background-color: <?php echo of_get_option( 'background-colour', '#f5f5f5');?>;
 		}
 	</style>
 </head>
