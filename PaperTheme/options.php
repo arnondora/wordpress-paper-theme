@@ -30,13 +30,5 @@ function optionsframework_options() {
 		'type' => 'color'
 	);	
 
-	$options[] = array(
-		'name' => __( 'Header Colour', 'theme-textdomain' ),
-		'desc' => __( '', 'theme-textdomain' ),
-		'id' => 'header_colour',
-		'std' => '',
-		'type' => 'color'
-	);
-
 	return $options;
 }
