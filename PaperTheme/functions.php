@@ -436,6 +436,14 @@
 	}
 	add_action('widgets_init', 'Register_My_Widget');
 
+	//Theme Settings
+	define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri() . '/inc/' );
+	require_once dirname( __FILE__ ) . '/inc/options-framework.php';
+
+	// Loads options.php from child or parent theme
+	$optionsfile = locate_template( 'options.php' );
+	load_template( $optionsfile );
+
 	// Other settings
 	add_theme_support('post_thumbnails');
 	set_post_thumbnail_size(672 , 372);

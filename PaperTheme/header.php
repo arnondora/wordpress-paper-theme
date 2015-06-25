@@ -7,6 +7,16 @@
 	<link href = "<?php bloginfo('stylesheet_url');?>" rel = "stylesheet">
 	<title><?php bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
+	<style>
+		body
+		{
+			background-color: <?php echo of_get_option('background_colour');?>;
+		}
+		h4
+		{
+			color: <?php echo of_get_option('header_colour');?>;
+		}
+	</style>
 </head>
 <body <?php body_class();?> >
 	<nav class="navbar navbar-default navbar-static-top">
