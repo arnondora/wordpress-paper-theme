@@ -1,0 +1,25 @@
+body
+{
+	 background-color: #F5F5F5;
+	 margin-bottom : 70px;
+}
+
+p
+{
+	color : #424242;
+}
+
+.shadow-box
+{
+	box-shadow: 1px 1px 1px 1px #EEEEEE;
+	background-color: #FAFAFA;
+	border-radius: 2px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top : 10px;
+}
+
+.image-margin-bottom
+{
+	margin-bottom: 20px;
+}

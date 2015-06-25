@@ -1,0 +1,57 @@
+/*
+Theme Name: Paper Theme
+Theme URI: http://www.arnondora.in.th
+Description: This theme uses for arnondora.in.th only all right reverse
+Version: 0.1
+Author: Arnon Puitrakul
+Author URI: http://www.arnondora.in.th/profile
+*/
+
+@import url('css/bootstrap.min.css');
+
+body
+{
+	 background-color: #F5F5F5;
+	 margin-bottom : 70px;
+}
+
+p
+{
+	color : #424242;
+	font-size: 15px;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+h2
+{
+	font-size: 40px;
+}
+
+.content
+{
+	margin-top : 25px;
+}
+
+.shadow-box
+{
+	box-shadow: 1px 1px 1px 1px #EEEEEE;
+	background-color: #FAFAFA;
+	width : 100%;
+	border-radius: 2px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	margin-right: 25px;
+	margin-top : 15px;
+}
+
+.image-margin-bottom
+{
+	margin-bottom: 20px;
+}
