@@ -24,11 +24,10 @@
 	//change search form style
 	function my_search_form( $form ) 
 	{
-		$form = '<h4 style = "margin-top:10px;">Search</h4>
-				 <div class="shadow-box row" style = "padding-top:5px;">
-						<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
-							<input type="text" class = "form-control" style = "margin-top :-5px;" placeholder = "Search something new!" value="' . get_search_query() . '" name="s" id="s" />
-				 		</form>
+		$form = '<div class="shadow-box row" style = "padding-top:5px;">
+					<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
+						<input type="text" class = "form-control" style = "margin-top :-5px;" placeholder = "Search something new!" value="' . get_search_query() . '" name="s" id="s" />
+				 	</form>
 				 </div>';
 
 	return $form;
