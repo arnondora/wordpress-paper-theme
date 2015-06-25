@@ -4,6 +4,7 @@
 <?php if(have_posts()) : while (have_posts()) : the_post();?>
 	<div class="container">
 		<!-- Main Content -->
+		<head><title> <?php the_title(); echo ' - '; bloginfo('name') ?></title></head>
 		<div class = "shadow-box" style = "padding-top:5px;">
 			<a href="<?php the_permalink(); ?>"><h3 class= "text-center"><?php the_title(); ?></h3></a>
 			<center> <p class = "text-muted">Posted by <?php the_author();?> on <?php the_time('F jS, Y'); ?></p> </center>

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<head><title><?php bloginfo('name'); echo ' - '; bloginfo('description');?></title></head>
 	<div class="container">
 		<div class="col-md-9">
 			<?php if (have_posts()) : while(have_posts()) : the_post();?>
@@ -11,7 +11,7 @@
 					<p class = "content"><?php the_excerpt(); ?></p>
 			</div>
 			<?php endwhile; else : ?>
-				<p><?php _e('No post right now.'); ?></p>
+				<div class = "row shadow-box"><h5><?php _e("We can't find what you are looking for."); ?></h5></div>
 			<?php endif; ?>
 		</div>
 
