@@ -6,12 +6,6 @@ Version: 0.1
 Author: Arnon Puitrakul
 Author URI: http://www.arnondora.in.th/profile
 */
-
-body
-{
-	 margin-bottom : 70px;
-}
-
 p
 {
 	color : #424242;
@@ -29,6 +23,12 @@ h2
 {
 	font-size: 40px;
 }
+
+.contain-content
+{
+	margin-bottom: 20px;
+}
+
 .content
 {
 	margin-top : 25px;

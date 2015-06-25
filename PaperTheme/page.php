@@ -2,7 +2,7 @@
 
 <!-- Condition if have post -->
 <?php if(have_posts()) : while (have_posts()) : the_post();?>
-	<div class="container" style="margin-bottom:75px;">
+	<div class="container contain-content">
 		<!-- Main Content -->
 		<div class = "shadow-box" style = "padding-top:5px;">
 			<a href="<?php the_permalink(); ?>"><h3 class= "text-center"><?php the_title(); ?></h3></a>
