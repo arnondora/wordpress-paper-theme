@@ -3,7 +3,7 @@
 <?php $catid = get_cat_id( single_cat_title("",false) );?>
 
 <head><title>Search result for <?php   echo '"' . $_GET['s'] . '"' . ' - '; bloginfo('name'); ?></title></head>
-<div class="container">
+<div class="container contain-content">
 
 	<?php get_search_form();?>
 
