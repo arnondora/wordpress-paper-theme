@@ -8,7 +8,7 @@
 	<?php get_search_form();?>
 
 	<?php if (have_posts()) : while(have_posts()) : the_post();?>
-		<div class="shadow-box row">
+		<div class="shadow-box">
 			<a href="<?php the_permalink();?>" title = "<?php the_title();?>"><h3 class = "text-center"><?php the_title();?></h3></a>
 			<h6 class = "text-muted text-center">Posted by <?php the_author();?> on <?php the_time('F jS, Y'); ?></h6>
 

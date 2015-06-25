@@ -24,7 +24,7 @@
 	//change search form style
 	function my_search_form( $form ) 
 	{
-		$form = '<div class="shadow-box row" style = "padding-top:5px;">
+		$form = '<div class="shadow-box" style = "padding-top:5px;">
 					<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
 						<input type="text" class = "form-control" style = "margin-top :-5px;" placeholder = "Search something new!" value="' . get_search_query() . '" name="s" id="s" />
 				 	</form>
@@ -101,7 +101,7 @@
 			<?php if ( $title ) {
 				echo $args['before_title'] . $title . $args['after_title'];
 			} ?>
-				<ul class="list-unstyled nav nav-pills nav-stacked shadow-box row" style = "padding-top :10px;">
+				<ul class="list-unstyled nav nav-pills nav-stacked shadow-box" style = "padding-top :10px;">
 				<?php while ( $r->have_posts() ) : $r->the_post(); ?>
 					<li>
 						<a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
@@ -234,7 +234,7 @@
 	<?php
 			} else {
 	?>
-			<div class="shadow-box row" style = "padding-top :10px;">
+			<div class="shadow-box" style = "padding-top :10px;">
 				<ul class="list-unstyled nav nav-pills nav-stacked">
 	<?php
 			/**
@@ -360,7 +360,7 @@
 		<?php
 				} else {
 		?>
-				<div class="shadow-box row" style = "padding-top : 10px;">
+				<div class="shadow-box" style = "padding-top : 10px;">
 					<ul class="list-unstyled nav nav-pills nav-stacked">
 			<?php
 					$cat_args['title_li'] = '';
