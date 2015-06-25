@@ -3,7 +3,7 @@
 <?php $catid = get_cat_id( single_cat_title("",false) );?>
 
 <head><title><?php single_cat_title('',true); echo ' - '; bloginfo('name'); ?></title></head>
-<div class="container">
+<div class="container" style="margin-bottom:75px;">
 
 	<div class="shadow-box row" style = "padding-top : 5px;">
 		<h5>Category :  <?php single_cat_title('',true); ?></h5>

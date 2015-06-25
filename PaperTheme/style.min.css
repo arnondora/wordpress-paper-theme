@@ -1,5 +1,4 @@
-body{background-color:#f5f5f5;margin-bottom:70px}p{color:#424242;font-size:15px}img{max-width:100%;height:auto;display:block}h2{font-size:40px}.content{margin-top:25px}
-.shadow-box{box-shadow:1px 1px 1px 1px #eee;background-color:#fafafa;width:100%;border-radius:2px;padding-left:25px;padding-right:25px;padding-bottom:10px;margin-right:25px;margin-top:15px}
+body{margin-bottom:70px}p{color:#424242;font-size:15px}img{max-width:100%;height:auto;display:block}h2{font-size:40px}.content{margin-top:25px}.shadow-box{box-shadow:1px 1px 1px 1px #eee;background-color:#fafafa;width:100%;border-radius:2px;padding-left:25px;padding-right:25px;padding-bottom:10px;margin-right:25px;margin-top:15px}
 .image-margin-bottom{margin-bottom:20px}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}
 a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}

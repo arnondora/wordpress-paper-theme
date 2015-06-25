@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <head><title><?php bloginfo('name'); echo ' - '; bloginfo('description');?></title></head>
-	<div class="container">
+	<div class="container" style="margin-bottom:75px;">
 		<div class="col-md-9">
 			<div class = "hidden-lg hidden-md"> <?php get_search_form(); ?> </div>
 			<?php if (have_posts()) : while(have_posts()) : the_post();?>
