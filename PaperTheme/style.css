@@ -39,7 +39,12 @@ h2
     margin-bottom: 0px;
     clear:both;
     color:#fff;
-} 
+}
+
+#footer-text
+{
+	color : #2196f3;
+}
 
 .content
 {
