@@ -7,6 +7,8 @@
 
 	<?php get_search_form();?>
 
+	<div class="shadow-box"><h6>Search Result for : <?php echo $_GET['s'];?></h6></div>
+
 	<?php if (have_posts()) : while(have_posts()) : the_post();?>
 		<div class="shadow-box">
 			<a href="<?php the_permalink();?>" title = "<?php the_title();?>"><h3 class = "text-center"><?php the_title();?></h3></a>
