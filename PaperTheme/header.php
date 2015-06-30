@@ -11,8 +11,19 @@
 	<style>
 		body
 		{
-			background-color: <?php echo of_get_option( 'background-colour', '#f5f5f5');?>;
+			background-color: <?php echo of_get_option( 'background_colour', '#f5f5f5');?>;
 		}
+
+		.shadow-box-colour
+		{
+			background-color: <?php echo of_get_option( 'paper_colour', '#FAFAFA');?>;	
+		}
+		
+		.header-text
+		{
+			color: <?php echo of_get_option( 'header-text-colour', '#444444');?>;
+		}
+
 	</style>
 </head>
 <body <?php body_class();?> >

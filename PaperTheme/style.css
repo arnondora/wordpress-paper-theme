@@ -6,10 +6,7 @@ Version: 1.0
 Author: Arnon Puitrakul
 Author URI: http://www.arnondora.in.th/profile
 */
-html
-{
-	height: 100%;
-}
+
 p
 {
 	color : #424242;
@@ -54,7 +51,7 @@ h2
 .shadow-box
 {
 	box-shadow: 1px 1px 1px 1px #EEEEEE;
-	background-color: #FAFAFA;
+	/*background-color: #FAFAFA;*/
 	width : 100%;
 	border-radius: 2px;
 	padding-left: 25px;
