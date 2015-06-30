@@ -4,13 +4,13 @@
 </head>
 
 <div class="container contain-content">
-	<div class="shadow-box block-center row">
+	<div class="shadow-box shadow-box-colour block-center row">
 		<center>
 			<h4>Oopps!!, something goes wrong!</h4>
 			<p class=  "text-muted">We can't found what you are looking for. <a href="<?php echo get_option('home');?>">Go Home?</a> or Try Search</p>
 		</center>
 	</div>
-	<div class="shadow-box block-center row" style = "padding-top:5px; padding-bottom : 20px;"><?php get_search_form();?></div>
+	<div class="shadow-box shadow-box-colour block-center row" style = "padding-top:5px; padding-bottom : 20px;"><?php get_search_form();?></div>
 </div>
 
 	<div class = "footer navbar navbar-default navbar-fixed-bottom" style="margin-bottom:0px;">

@@ -24,7 +24,7 @@
 	//change search form style
 	function my_search_form( $form ) 
 	{
-		$form = '<div class="shadow-box" style = "padding-top:5px;">
+		$form = '<div class="shadow-box shadow-box-colour" style = "padding-top:5px;">
 					<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
 						<input type="text" class = "form-control" style = "margin-top :-5px;" placeholder = "Search something new!" value="' . get_search_query() . '" name="s" id="s" />
 				 	</form>
@@ -101,7 +101,7 @@
 			<?php if ( $title ) {
 				echo $args['before_title'] . $title . $args['after_title'];
 			} ?>
-				<ul class="list-unstyled nav nav-pills nav-stacked shadow-box" style = "padding-top :10px;">
+				<ul class="list-unstyled nav nav-pills nav-stacked shadow-box shadow-box-colour" style = "padding-top :10px;">
 				<?php while ( $r->have_posts() ) : $r->the_post(); ?>
 					<li>
 						<a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
@@ -229,7 +229,7 @@
 	<?php
 			} else {
 	?>
-			<div class="shadow-box" style = "padding-top :10px;">
+			<div class="shadow-box shadow-box-colour" style = "padding-top :10px;">
 				<ul class="list-unstyled nav nav-pills nav-stacked">
 	<?php
 			/**
@@ -350,7 +350,7 @@
 		<?php
 				} else {
 		?>
-				<div class="shadow-box" style = "padding-top : 10px;">
+				<div class="shadow-box shadow-box-colour" style = "padding-top : 10px;">
 					<ul class="list-unstyled nav nav-pills nav-stacked">
 			<?php
 					$cat_args['title_li'] = '';
@@ -428,7 +428,7 @@
 			}
 		?>
 		
-		<div class="shadow-box">	
+		<div class="shadow-box shadow-box-colour">	
 			<ul class = "nav nav-default">
 				<?php echo $out; ?>
 			</ul>
@@ -495,7 +495,7 @@
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
 		?>
-			<div class="shadow-box">
+			<div class="shadow-box shadow-box-colour">
 				<ul class = "nav nav-default">
 				<?php wp_register(); ?>
 				<li><?php wp_loginout(); ?></li>
@@ -549,7 +549,7 @@
 			if ( $title ) {
 				echo $args['before_title'] . $title . $args['after_title'];
 			}
-			echo '<div class = "shadow-box" id="calendar_wrap">';
+			echo '<div class = "shadow-box shadow-box-colour" id="calendar_wrap">';
 				echo '<center>' ; get_calendar(); echo '</center>';
 			echo '</div>';
 			echo $args['after_widget'];
@@ -590,7 +590,7 @@
 			if ( ! empty( $title ) ) {
 				echo $args['before_title'] . $title . $args['after_title'];
 			} ?>
-				<div class="textwidget shadow-box"><?php echo !empty( $instance['filter'] ) ? wpautop( $text ) : $text; ?></div>
+				<div class="textwidget shadow-box shadow-box-colour"><?php echo !empty( $instance['filter'] ) ? wpautop( $text ) : $text; ?></div>
 			<?php
 			echo $args['after_widget'];
 		}
@@ -693,7 +693,7 @@
 				$output .= $args['before_title'] . $title . $args['after_title'];
 			}
 
-			$output .= '<div class = "shadow-box"><ul id="recentcomments" class = "list-unstyled">';
+			$output .= '<div class = "shadow-box shadow-box-colour"><ul id="recentcomments" class = "list-unstyled">';
 			if ( $comments ) {
 				// Prime cache for associated posts. (Prime post term cache if we need it for permalinks.)
 				$post_ids = array_unique( wp_list_pluck( $comments, 'comment_post_ID' ) );
@@ -775,7 +775,7 @@
 			if ( $title ) {
 				echo $args['before_title'] . $title . $args['after_title'];
 			}
-			echo '<div class="tagcloud shadow-box">';
+			echo '<div class="tagcloud shadow-box shadow-box-colour">';
 
 			wp_tag_cloud( apply_filters( 'widget_tag_cloud_args', array(
 				'taxonomy' => $current_taxonomy
@@ -843,7 +843,7 @@
 			$nav_menu_args = array(
 				'fallback_cb' => '',
 				'menu'        => $nav_menu,
-				'menu_class'        => 'nav navbar-default shadow-box'
+				'menu_class'        => 'nav navbar-default shadow-box shadow-box-colour'
 			);
 			wp_nav_menu( apply_filters( 'widget_nav_menu_args', $nav_menu_args, $nav_menu, $args ) );
 

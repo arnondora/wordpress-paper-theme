@@ -5,7 +5,7 @@
 	<div class="container contain-content">
 		<!-- Main Content -->
 		<head><title> <?php the_title(); echo ' - '; bloginfo('name') ?></title></head>
-		<div class = "shadow-box" style = "padding-top:5px;">
+		<div class = "shadow-box shadow-box-colour" style = "padding-top:5px;">
 			<a href="<?php the_permalink(); ?>"><h3 class= "text-center"><?php the_title(); ?></h3></a>
 			<center> <p class = "text-muted">Posted by <?php the_author();?> on <?php the_time('F jS, Y'); ?></p> </center>
 			<?php if (has_post_thumbnail()) : ?>
@@ -15,7 +15,7 @@
 		</div>
 		
 		<!-- Tag and Category -->
-		<div class = "shadow-box" style="padding-top:5px;" >
+		<div class = "shadow-box shadow-box-colour" style="padding-top:5px;" >
 			<div style = "margin-top:5px;">
 				<span>Categories & Tags : </span>
 				<?php
@@ -37,7 +37,7 @@
 		</div>
 
 		<!-- Comment -->
-		<div class="shadow-box" style = "padding-top:5px;"><?php comments_template(); ?></div>
+		<div class="shadow-box shadow-box-colour" style = "padding-top:5px;"><?php comments_template(); ?></div>
 	</div>
 <?php endwhile; else: ?>
 <?php endif;?>

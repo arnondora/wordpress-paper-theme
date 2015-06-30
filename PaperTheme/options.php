@@ -28,6 +28,22 @@ function optionsframework_options() {
 		'id' => 'background_colour',
 		'std' => '',
 		'type' => 'color'
+	);
+
+	$options[] = array(
+		'name' => __( 'Paper Colour', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'paper_colour',
+		'std' => '',
+		'type' => 'color'
+	);
+
+	$options[] = array(
+		'name' => __( 'Header Text Colour', 'theme-textdomain' ),
+		'desc' => __( '', 'theme-textdomain' ),
+		'id' => 'header-text-colour',
+		'std' => '',
+		'type' => 'color'
 	);	
 
 	return $options;

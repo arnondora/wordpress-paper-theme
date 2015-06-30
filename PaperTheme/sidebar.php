@@ -1,6 +1,6 @@
 <!-- <div class="col-md-3 hidden-xs hidden-sm" style= "margin-top:0px;">
 	<h4>Catagories</h4>
-	<div class="shadow-box" style = "padding-top : 10px;">
+	<div class="shadow-box shadow-box-colour" style = "padding-top : 10px;">
 		<ul class="list-unstyled nav nav-pills nav-stacked">
 			<?php
 				$args = array('orderby' => 'name', 'order' => 'ASC');
@@ -16,7 +16,7 @@
 
 <!-- <div class="col-md-3 hidden-xs hidden-sm" style="margin-top:0px;">
 	<h4>Archive</h4>
-	<div class="shadow-box" style="padding-top:10px">
+	<div class="shadow-box shadow-box-colour" style="padding-top:10px">
 		<ul class="list-unstyled nav nav-pills nav-stacked">
 			<?php 
 			$args = array (
