@@ -953,4 +953,10 @@
 	// Other settings
 	add_theme_support( 'post-thumbnails' ); 
 	set_post_thumbnail_size(672 , 372);
+	//Add style in next_posts_link() and previous_posts_link() in index.php
+	add_filter('next_posts_link_attributes', 'next_link_attributes');
+	add_filter('previous_posts_link_attributes', 'previous_link_attributes');
+	
+	function previous_link_attributes() {return 'class="btn btn-default pull-right"';}
+	function next_link_attributes() {return 'class="btn btn-default pull-left"';}
 ?>
