@@ -26,7 +26,7 @@ function optionsframework_options() {
 		'name' => __( 'Background Colour', 'theme-textdomain' ),
 		'desc' => __( '', 'theme-textdomain' ),
 		'id' => 'background_colour',
-		'std' => '',
+		'std' => '#f5f5f5',
 		'type' => 'color'
 	);
 
@@ -34,7 +34,7 @@ function optionsframework_options() {
 		'name' => __( 'Paper Colour', 'theme-textdomain' ),
 		'desc' => __( '', 'theme-textdomain' ),
 		'id' => 'paper_colour',
-		'std' => '',
+		'std' => '#FAFAFA',
 		'type' => 'color'
 	);
 
@@ -42,7 +42,7 @@ function optionsframework_options() {
 		'name' => __( 'Header Text Colour', 'theme-textdomain' ),
 		'desc' => __( '', 'theme-textdomain' ),
 		'id' => 'header-text-colour',
-		'std' => '',
+		'std' => '#444444',
 		'type' => 'color'
 	);	
 
