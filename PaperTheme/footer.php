@@ -1,6 +1,6 @@
 	<div class = "footer navbar navbar-default" style="margin-bottom:0px;">
 		<div class="container">
-			<p class = "navbar-text pull-left" id = "footer-text">Copyright 2014-2015 Arnon Puitrakul all right reserved.</p>
+			<p class = "navbar-text pull-left" id = "footer-text">© 2014-<?php echo date('Y') ?> Arnon Puitrakul all right reserved.</p>
 			<p class="navbar-text pull-right" id = "footer-text">Paper Theme by <a href="http://www.arnondora.in.th">@arnondora</a>
 		</div>
 	</div>
