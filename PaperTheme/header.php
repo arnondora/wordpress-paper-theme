@@ -4,6 +4,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta http-equiv="x-ua-compatiible" content = "IE-edge">
 	<meta name = "viewport" content="width-device-width, initial-scale=1">
+	<meta name = "theme-color" content = "#9E9E9E"> <!-- Add theme-color for chrome >39 -->
 	<!-- <link href = "<?php bloginfo('stylesheet_url');?>" rel = "stylesheet"> -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.min.css" type="text/css" media="all" />
 	<!-- <title><?php bloginfo('name'); ?></title> -->
