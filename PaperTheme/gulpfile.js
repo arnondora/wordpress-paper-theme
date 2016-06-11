@@ -16,7 +16,7 @@ gulp.task("sass", function () {
 });
 
 gulp.task('concat', function() {
-  return gulp.src(['./sass/*.scss', './bower_components/bootswatch/bootstrap.min.css','./bower_components/font-awesome/css/font-awesome.min.css'])
+  return gulp.src(['./sass/*.scss', './bower_components/bootswatch/bootstrap.css','./bower_components/font-awesome/css/font-awesome.css'])
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./css'));
