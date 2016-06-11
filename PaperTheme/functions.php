@@ -240,7 +240,7 @@
 	<?php
 			} else {
 	?>
-			<div class="shadow-box shadow-box-colour" style = "padding-top :10px;">
+			<div class="shadow-box-sidebar shadow-box-colour">
 				<ul class="list-unstyled nav nav-pills nav-stacked">
 	<?php
 			/**
