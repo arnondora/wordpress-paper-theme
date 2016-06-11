@@ -110,16 +110,18 @@
 			<?php if ( $title ) {
 				echo $args['before_title'] . $title . $args['after_title'];
 			} ?>
-				<ul class="list-unstyled nav nav-pills nav-stacked shadow-box shadow-box-colour" style = "padding-top :10px;">
-				<?php while ( $r->have_posts() ) : $r->the_post(); ?>
-					<li>
-						<a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
-					<?php if ( $show_date ) : ?>
-						<span class="post-date"><?php echo get_the_date(); ?></span>
-					<?php endif; ?>
-					</li>
-				<?php endwhile; ?>
-				</ul>
+				<div class = "shadow-box-sidebar shadow-box-colour">
+					<ul class="list-unstyled nav nav-pills nav-stacked">
+					<?php while ( $r->have_posts() ) : $r->the_post(); ?>
+						<li>
+							<a href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
+						<?php if ( $show_date ) : ?>
+							<span class="post-date"><?php echo get_the_date(); ?></span>
+						<?php endif; ?>
+						</li>
+					<?php endwhile; ?>
+					</ul>
+				</div>
 			<?php echo $args['after_widget']; ?>
 	<?php
 			// Reset the global $the_post as this query will have stomped on it
