@@ -19,7 +19,7 @@
 		<?php get_sidebar(); ?>
 	</div>
 
-			<div class = "container" style = "padding-bottom:10px;">
+			<div class = "content-nav container">
 				<?php next_posts_link('Older Entries') ?>
 				<?php previous_posts_link('Newer Entries') ?>
 			</div>
