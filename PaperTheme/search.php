@@ -10,7 +10,7 @@
 	<div class="shadow-box shadow-box-colour"><h6>Search Result for : <?php echo $_GET['s'];?></h6></div>
 
 	<?php if (have_posts()) : while(have_posts()) : the_post();?>
-		<div class="shadow-box shadow-box-colour">
+		<div class="shadow-box-page shadow-box-colour">
 			<a href="<?php the_permalink();?>" title = "<?php the_title();?>"><h3 class = "text-center"><?php the_title();?></h3></a>
 			<h6 class = "text-muted text-center">Posted by <?php the_author();?> on <?php the_time('F jS, Y'); ?></h6>
 
@@ -18,7 +18,7 @@
 			<p class = "content"><?php the_excerpt(); ?></p>
 		</div>
 		<?php endwhile; else : ?>
-			<div class="shadow-box shadow-box-colour block-center">
+			<div class="shadow-box-page shadow-box-colour block-center">
 				<center>
 					<h4 style = "margin-top:5px;">We can't found what you are looking for.</h4>
 					<p class=  "text-muted">Try other keyword or <a href="<?php echo get_option('home');?>">Go Home?</a></p>
