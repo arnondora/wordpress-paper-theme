@@ -1,0 +1,130 @@
+$MainBackgroundColour: #F5F5F5;
+$MainFontColour : #424242;
+$ShadowBoxShadowColour: #EEEEEE;
+
+html
+{
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body
+{
+  margin-bottom: 70px;
+  -webkit-font-smoothing: antialiased;
+}
+
+hr
+{
+  border-color: $MainFontColour;
+}
+
+pre
+{
+  border-style: solid hidden solid hidden !important;
+  background: none !important;
+  color: lighten($MainFontColour, 20%) !important;
+  font-size: 15px !important;
+  margin : 20px 0px 20px 0px !important;
+  @extend hr;
+}
+
+.shadow-box
+{
+	box-shadow: 1px 1px 1px 1px $ShadowBoxShadowColour;
+	border-radius: 2px;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top : 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.shadow-box-sidebar
+{
+  @extend .shadow-box;
+  margin-left: 0px;
+  padding-top :10px;
+  padding-bottom: 10px;
+}
+
+.shadow-box-page
+{
+  @extend .shadow-box;
+  padding-left :50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+.sidebar-list-box
+{
+  margin-top:25px !important;
+  margin-bottom: 25px !important;
+}
+
+.image-margin-bottom
+{
+	margin-bottom: 20px;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.content-nav
+{
+  margin-top:20px;
+  padding-bottom:20px;
+}
+
+.desktop-search-container
+{
+  width:100% !important;
+  padding-top:5px;
+}
+
+.desktop-search-container > .form-inline > .form-group > .search-icon
+{
+  width:20%;
+  margin-top : 5px;
+}
+
+.desktop-search-container > .form-inline > .form-group > .search-field
+{
+  width:80%;
+  margin-top: -5px;
+}
+
+#footer-text
+{
+  font-size: 1.2em;
+  color: $MainFontColour;
+}
+
+//Text Alignment
+.row > p , .shadow-box > p , .row> ol>li
+{
+  color: $MainFontColour;
+  font-size: 17px;
+}
+
+.row > ol
+{
+  margin-bottom: 17px;
+}
+
+// Import other dependencies to compile
+@import './bower_components/octicons/octicons.scss';
+@import "font.scss";
