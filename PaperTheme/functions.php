@@ -8,7 +8,7 @@
 
 	//Register side Sidebar
 	add_action( 'widgets_init', 'theme_slug_widgets_init' );
-	function theme_slug_widgets_init() 
+	function theme_slug_widgets_init()
 	{
     	register_sidebar( array(
         	'name' => __( 'Main Sidebar', 'theme-slug' ),
@@ -22,13 +22,22 @@
 	}
 
 	//change search form style
-	function my_search_form( $form ) 
+	function my_search_form( $form )
 	{
-		$form = '<div class="shadow-box shadow-box-colour" style = "padding-top:5px;">
-					<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
-						<input type="text" class = "form-control" style = "margin-top :-5px;" placeholder = "Search something new!" value="' . get_search_query() . '" name="s" id="s" />
-				 	</form>
-				 </div>';
+		$form = '<div class="container desktop-search-container hidden-sm hidden-xs">
+					<form class = "form-inline" role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
+						<div class = "row form-group">
+							<i class="fa fa-search search-icon col-xs-2" aria-hidden="true"></i>
+							<input type="text" class = "form-control search-field col-xs-11" placeholder = "Search topic here" value="' . get_search_query() . '" name="s" id="s" />
+						</div>
+					</form>
+				 </div>
+
+				 <div class="shadow-box shadow-box-colour visible-sm visible-xs" style = "margin-top:-10px;">
+		 					<form role="search" method="get" id="searchform" class="searchform" action="' . home_url( '/' ) . '" >
+		 						<input type="text" class = "form-control" placeholder = "Search topic here" value="' . get_search_query() . '" name="s" id="s" />
+		 					</form>
+		 				 </div>';
 
 	return $form;
 	}
@@ -427,8 +436,8 @@
 				echo $args['before_title'] . $title . $args['after_title'];
 			}
 		?>
-		
-		<div class="shadow-box shadow-box-colour">	
+
+		<div class="shadow-box shadow-box-colour">
 			<ul class = "nav nav-default">
 				<?php echo $out; ?>
 			</ul>
@@ -951,12 +960,12 @@
 	load_template( $optionsfile );
 
 	// Other settings
-	add_theme_support( 'post-thumbnails' ); 
+	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size(672 , 372);
 	//Add style in next_posts_link() and previous_posts_link() in index.php
 	add_filter('next_posts_link_attributes', 'next_link_attributes');
 	add_filter('previous_posts_link_attributes', 'previous_link_attributes');
-	
+
 	function previous_link_attributes() {return 'class="btn btn-default pull-right"';}
 	function next_link_attributes() {return 'class="btn btn-default pull-left"';}
 ?>
