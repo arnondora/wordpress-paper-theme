@@ -109,6 +109,10 @@ html {
   font-weight: 300 !important;
 }
 
+h1, h2, h3, h4, h5, .h3, navbar-brand {
+  font-family: "Sukhumvit Set","ThaiSansLite","sans-serif" !important;
+}
+
 .row > p, .shadow-box > p, .shadow-box-sidebar > p, .shadow-box-page > p, .row > ol > li {
   color: #424242;
   font-size: 17px;
@@ -118,8 +122,8 @@ html {
   margin-bottom: 17px;
 }
 
-h1, h2, h3, h4, h5, .h3, navbar-brand {
-  font-family: "Sukhumvit Set","ThaiSansLite","sans-serif" !important;
+.sidebar-title {
+  font-size: 2em;
 }
 
 .header-text {

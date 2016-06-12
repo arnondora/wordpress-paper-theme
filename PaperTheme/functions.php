@@ -81,7 +81,7 @@
 
 			/** This filter is documented in wp-includes/default-widgets.php */
 			//$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
-			$title = '<h4>' . $title . '</h4>'; //change to my style
+			$title = '<h4 class = "sidebar-title">' . $title . '</h4>'; //change to my style
 
 			$number = ( ! empty( $instance['number'] ) ) ? absint( $instance['number'] ) : 5;
 			if ( ! $number )
@@ -186,7 +186,7 @@
 
 			/** This filter is documented in wp-includes/default-widgets.php */
 			$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Archives' ) : $instance['title'], $instance, $this->id_base );
-			$title = '<h4>' . $title . '</h4>';
+			$title = '<h4 class = "sidebar-title">' . $title . '</h4>';
 
 			echo $args['before_widget'];
 			if ( $title ) {
@@ -303,7 +303,7 @@
 
 				/** This filter is documented in wp-includes/default-widgets.php */
 				$title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Categories' ) : $instance['title'], $instance, $this->id_base );
-				$title = '<h4>' . $title . '</h4>';
+				$title = '<h4 class = "sidebar-title">' . $title . '</h4>';
 
 				$c = ! empty( $instance['count'] ) ? '1' : '0';
 				$h = ! empty( $instance['hierarchical'] ) ? '1' : '0';
@@ -687,7 +687,7 @@
 
 			/** This filter is documented in wp-includes/default-widgets.php */
 			$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
-			$title = '<h4>' . $title . '</h4>';
+			$title = '<h4 class = "sidebar-title">' . $title . '</h4>';
 
 			$number = ( ! empty( $instance['number'] ) ) ? absint( $instance['number'] ) : 5;
 			if ( ! $number )
@@ -780,7 +780,7 @@
 
 			/** This filter is documented in wp-includes/default-widgets.php */
 			$title = apply_filters( 'widget_title', $title, $instance, $this->id_base );
-			$title = '<h4>' . $title . '</h4>';
+			$title = '<h4 class = "sidebar-title">' . $title . '</h4>';
 
 			echo $args['before_widget'];
 			if ( $title ) {
