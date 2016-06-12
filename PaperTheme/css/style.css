@@ -66,6 +66,10 @@ p > a > img {
   margin-bottom: 20px;
 }
 
+.img-thumb {
+  box-shadow: 1px 1px 1px 1px #EEEEEE;
+}
+
 .aligncenter {
   display: block;
   margin-left: auto;

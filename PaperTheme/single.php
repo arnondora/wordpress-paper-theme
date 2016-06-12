@@ -9,7 +9,7 @@
 			<a class = 'header-link' href="<?php the_permalink();?>" title = "<?php the_title();?>"><h3 class = "header-text text-center"><?php the_title();?></h3></a>
 			<center> <p class = "text-muted">Posted by <?php the_author();?> on <?php the_time('F jS, Y'); ?></p> </center>
 			<?php if (has_post_thumbnail()) : ?>
-				<div class="row" style = "margin-top:10px;"><center><?php the_post_thumbnail('large',array('class' => 'full-width img-responsive img-thumbnail')); ?></center></div>
+				<div class="row" style = "margin-top:10px;"><center><?php the_post_thumbnail('large',array('class' => 'full-width img-responsive img-thumb')); ?></center></div>
 			<?php endif; ?>
 			<div class="row content"><p><?php the_content(); ?></p></div>
 		</div>
