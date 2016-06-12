@@ -132,10 +132,20 @@ h1,h2,h3,h4,h5,.h3,navbar-brand
   font-family: "Sukhumvit Set","ThaiSansLite","sans-serif" !important;
 }
 
-.row > p , .shadow-box > p , .row> ol>li
+.content > h4
+{
+  font-size: 2.5em !important;
+}
+
+.row > p , .shadow-box > p , .row> ol>li, ul>li
 {
   color: $MainFontColour;
   font-size: 17px;
+}
+
+.row > ul
+{
+  margin-bottom: 17px !important;
 }
 
 .row > ol
@@ -145,7 +155,7 @@ h1,h2,h3,h4,h5,.h3,navbar-brand
 
 .sidebar-title
 {
-  font-size: 2em; 
+  font-size: 2em;
 }
 
 .header-text

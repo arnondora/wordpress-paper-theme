@@ -11,7 +11,7 @@
 			<?php if (has_post_thumbnail()) : ?>
 				<div class="row" style = "margin-top:10px;"><center><?php the_post_thumbnail('large',array('class' => 'full-width img-responsive img-thumbnail')); ?></center></div>
 			<?php endif; ?>
-			<div class="row"><p><?php the_content(); ?></p></div>
+			<div class="row content"><p><?php the_content(); ?></p></div>
 		</div>
 
 		<!-- Tag and Category -->
