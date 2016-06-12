@@ -205,6 +205,10 @@ h1, h2, h3, h4, h5, .h3, navbar-brand {
   font-weight: 300;
 }
 
+.menu-item > a:hover {
+  color: #2196f3 !important;
+}
+
 .cat-tag {
   color: #424242;
   margin-right: 15px;
