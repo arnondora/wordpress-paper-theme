@@ -50,6 +50,16 @@ p > a > img , p > img  {
   height: auto;
 }
 
+iframe
+{
+  @extend .aligncenter;
+}
+
+.container-fluid
+{
+  width: 70%;
+}
+
 .shadow-box
 {
 	box-shadow: 1px 1px 1px 1px $ShadowBoxShadowColour;

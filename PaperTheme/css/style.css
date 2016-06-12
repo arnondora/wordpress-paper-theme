@@ -41,6 +41,10 @@ p > a > img, p > img {
   height: auto;
 }
 
+.container-fluid {
+  width: 70%;
+}
+
 .shadow-box, .shadow-box-sidebar, .shadow-box-page, .shadow-box-no-colour {
   box-shadow: 1px 1px 1px 1px #EEEEEE;
   border-radius: 2px;
@@ -110,7 +114,7 @@ p > a > img, p > img {
   background-color: #dd4b39;
 }
 
-.aligncenter {
+.aligncenter, iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;

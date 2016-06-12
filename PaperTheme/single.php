@@ -2,7 +2,7 @@
 
 <!-- Condition if have post -->
 <?php if(have_posts()) : while (have_posts()) : the_post();?>
-	<div class="container contain-content">
+	<div class="container-fluid contain-content">
 		<!-- Main Content -->
 		<head><title> <?php the_title(); echo ' - '; bloginfo('name') ?></title></head>
 		<div class = "shadow-box-page shadow-box-colour" style = "padding-top:5px;">
