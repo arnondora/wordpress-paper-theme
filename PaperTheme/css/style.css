@@ -5,6 +5,14 @@
 }
 
 @charset "UTF-8";
+/*
+Theme Name: Paper Theme
+Theme URI: https://www.arnondora.in.th
+Description: Paper Theme for Wordpress
+Version: 2.0
+Author: Arnon Puitrakul
+Author URI: https://www.arnondora.in.th/profile
+*/
 html {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -27,7 +35,7 @@ pre {
   margin: 20px 0px 20px 0px !important;
 }
 
-p > a > img {
+p > a > img, p > img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -66,6 +74,10 @@ p > a > img {
   margin-bottom: 25px !important;
 }
 
+.cat-tag-box {
+  margin-bottom: 20px;
+}
+
 .image-margin-bottom {
   margin-bottom: 20px;
 }
@@ -74,6 +86,28 @@ p > a > img {
   box-shadow: 1px 1px 1px 1px #EEEEEE;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.social-btn {
+  color: #5c5c5c;
+  box-shadow: none !important;
+}
+
+.social-btn:hover {
+  color: white !important;
+  box-shadow: none !important;
+}
+
+.social-btn-facebook:hover {
+  background-color: #4464a2;
+}
+
+.social-btn-twitter:hover {
+  background-color: #03b5ef;
+}
+
+.social-btn-google-plus:hover {
+  background-color: #dd4b39;
 }
 
 .aligncenter {

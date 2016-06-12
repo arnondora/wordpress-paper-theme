@@ -10,11 +10,19 @@
 			<?php if (has_post_thumbnail()) : ?>
 				<div class="row" style = "margin-top:10px;"><center><?php the_post_thumbnail('large',array('class' => 'full-width img-responsive img-thumb')); ?></center></div>
 			<?php endif; ?>
-			<div class="row content"><p><?php the_content(); ?></p></div>
+			<div class="row content"><p><?php the_content(); ?></p>
+				<!--Sharing Button  -->
+				<div class="row pull-right">
+					Wanna share this to social media?
+					<a class = "social-btn social-btn-facebook btn fa fa-lg fa-facebook" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>"></a>
+					<a class = "social-btn social-btn-twitter btn fa fa-lg fa-twitter" href="https://twitter.com/intent/tweet?text=<?php the_title(); echo " "; the_permalink();?>"></a>
+					<a class = "social-btn social-btn-google-plus btn fa fa-lg fa-google-plus" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"></a>
+				</div>
+			</div>
 		</div>
 
 		<!-- Tag and Category -->
-		<div class = "shadow-box-no-colour">
+		<div class = "cat-tag-box shadow-box-no-colour">
 			<div class = "align-center">
 				<span class = "cat-tag-header">Tags & Catagories<?php echo " -> "; ?></span>
 				<?php
