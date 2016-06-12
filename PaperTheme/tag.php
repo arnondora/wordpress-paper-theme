@@ -6,7 +6,7 @@
 <div class="container">
 
 	<div class="shadow-box shadow-box-colour row" style = "padding-top : 5px;">
-		<h5>Tag :  <?php single_cat_title('',true); ?></h5>
+		<h5>#<?php single_cat_title('',true); ?></h5>
 	</div>
 
 	<?php if (have_posts()) : while(have_posts()) : the_post();?>
