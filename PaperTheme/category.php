@@ -3,7 +3,7 @@
 <?php $catid = get_cat_id( single_cat_title("",false) );?>
 
 <head><title><?php single_cat_title('',true); echo ' - '; bloginfo('name'); ?></title></head>
-<div class="container" style="margin-bottom:75px;">
+<div class="container">
 
 	<div class="shadow-box shadow-box-colour row" style = "padding-top : 5px;">
 		<h5>Category :  <?php single_cat_title('',true); ?></h5>
@@ -20,6 +20,11 @@
 		<?php endwhile; else : ?>
 				<p><?php _e('No post right now.'); ?></p>
 		<?php endif; ?>
+
+		<div class = "content-nav container">
+			<?php next_posts_link('Older Entries') ?>
+			<?php previous_posts_link('Newer Entries') ?>
+		</div>
 </div>
 
 <?php get_footer();?>
