@@ -1,5 +1,7 @@
 $MainBackgroundColour: #F5F5F5;
 $MainFontColour : #424242;
+$navbar-font-colour : darken($MainFontColour, 10%);
+$link-font-color : #2196f3;
 $ShadowBoxShadowColour: #EEEEEE;
 
 html
@@ -120,6 +122,11 @@ p > a > img {
 }
 
 //Text Alignment
+html
+{
+  font-weight: 300 !important;
+}
+
 .row > p , .shadow-box > p , .row> ol>li
 {
   color: $MainFontColour;
@@ -131,14 +138,43 @@ p > a > img {
   margin-bottom: 17px;
 }
 
-h1,h2,h3,h4,h5
+h1,h2,h3,h4,h5,.h3,navbar-brand
 {
   font-family: "Sukhumvit Set","ThaiSansLite","sans-serif" !important;
 }
 
+
 .header-text
 {
   font-size: 3.3em;
+}
+
+.header-link > h3
+{
+  text-decoration: none !important;
+}
+
+.header-link > .header-text:hover
+{
+  color: $link-font-color;
+}
+
+.header-link:hover
+{
+  text-decoration: none;
+}
+
+.navbar-brand
+{
+  font-size: 1.8em !important;
+  color: $navbar-font-colour !important;
+}
+
+.menu-item > a
+{
+  font-size: 1.2em !important;
+  color: $navbar-font-colour !important;
+  font-weight:300;
 }
 
 // Import other dependencies to compile
