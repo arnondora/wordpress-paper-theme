@@ -33,7 +33,7 @@ p > a > img {
   height: auto;
 }
 
-.shadow-box, .shadow-box-sidebar, .shadow-box-page {
+.shadow-box, .shadow-box-sidebar, .shadow-box-page, .shadow-box-no-colour {
   box-shadow: 1px 1px 1px 1px #EEEEEE;
   border-radius: 2px;
   margin-left: 25px;
@@ -51,10 +51,14 @@ p > a > img {
   padding-bottom: 10px;
 }
 
-.shadow-box-page {
+.shadow-box-page, .shadow-box-no-colour {
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 20px;
+}
+
+.shadow-box-no-colour {
+  box-shadow: none;
 }
 
 .sidebar-list-box {
@@ -121,7 +125,7 @@ h1, h2, h3, h4, h5, .h3, navbar-brand {
   font-size: 2.5em !important;
 }
 
-.row > p, .shadow-box > p, .shadow-box-sidebar > p, .shadow-box-page > p, .row > ol > li, ul > li {
+.row > p, .shadow-box > p, .shadow-box-sidebar > p, .shadow-box-page > p, .shadow-box-no-colour > p, .row > ol > li, ul > li {
   color: #424242;
   font-size: 17px;
 }
@@ -163,6 +167,24 @@ h1, h2, h3, h4, h5, .h3, navbar-brand {
   font-size: 1.2em !important;
   color: #292929 !important;
   font-weight: 300;
+}
+
+.cat-tag {
+  color: #424242;
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+.cat-tag-header {
+  color: #424242;
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+.cat-tag:hover {
+  text-decoration: none;
+  color: #2196f3;
+  font-size: 1.5em;
 }
 
 @font-face {

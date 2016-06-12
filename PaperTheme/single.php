@@ -15,21 +15,21 @@
 		</div>
 
 		<!-- Tag and Category -->
-		<div class = "shadow-box shadow-box-colour" style="padding-top:5px;" >
-			<div style = "margin-top:5px;">
-				<span>Categories & Tags : </span>
+		<div class = "shadow-box-no-colour">
+			<div class = "align-center">
+				<span class = "cat-tag-header">Tags & Catagories<?php echo " -> "; ?></span>
 				<?php
 					$categories = get_the_category();
 					foreach ($categories as $category)
 					{
-						echo '<a href="' . get_category_link($category->term_id).'" class="btn btn-default" style = "margin-left : 4px;">' . $category->cat_name. '</a>';
+						echo '<a href="' . get_category_link($category->term_id).'" class="cat-tag">' . $category->cat_name. '</a>';
 					}
 
 					if (has_tag()) :
 					$tags = get_the_tags();
 					foreach ($tags as $tag)
 					{
-						echo '<a href="' . get_tag_link($tag->term_id). '" class = "btn btn-info" style = "margin-left : 4px;">' . $tag->name. '</a>';
+						echo '<a href="' . get_tag_link($tag->term_id). '" class = "cat-tag">#' . $tag->name. '</a>';
 					}
 					endif;
 				?>
@@ -37,7 +37,7 @@
 		</div>
 
 		<!-- Comment -->
-		<div class="shadow-box shadow-box-colour" style = "padding-top:5px;"><?php comments_template(); ?></div>
+		<div class="shadow-box-no-colour" style = "padding-top:5px;"><?php comments_template(); ?></div>
 	</div>
 <?php endwhile; else: ?>
 <?php endif;?>

@@ -14,7 +14,7 @@
 		</div>
 
 		<!-- Comment -->
-		<div class="shadow-box-page shadow-box-colour" style = "padding-top:5px;"><?php comments_template(); ?></div>
+		<div class="shadow-box-no-colour" style = "padding-top:5px;"><?php comments_template(); ?></div>
 	</div>
 <?php endwhile; else: ?>
 <?php endif;?>

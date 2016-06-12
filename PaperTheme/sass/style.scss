@@ -66,6 +66,12 @@ p > a > img {
   margin-bottom: 20px;
 }
 
+.shadow-box-no-colour
+{
+  @extend .shadow-box-page;
+  box-shadow: none;
+}
+
 .sidebar-list-box
 {
   margin-top:25px !important;
@@ -194,6 +200,28 @@ h1,h2,h3,h4,h5,.h3,navbar-brand
   font-size: 1.2em !important;
   color: $navbar-font-colour !important;
   font-weight:300;
+}
+
+.cat-tag
+{
+  color : $MainFontColour;
+  margin-right: 15px;
+  font-size: 1.2em;
+
+}
+
+.cat-tag-header
+{
+  color : $MainFontColour;
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+.cat-tag:hover
+{
+  text-decoration: none;
+  color: $link-font-color;
+  font-size: 1.5em;
 }
 
 // Import other dependencies to compile
