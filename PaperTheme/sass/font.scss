@@ -3,3 +3,104 @@
   src: url("../fonts/thaisanslite/thaisanslite_r1-webfont.eot");
   src: url("../fonts/thaisanslite/thaisanslite_r1-webfont.woff") format("woff"), url("../fonts/thaisanslite/thaisanslite_r1-webfont.woff2") format("woff2"), url('../fonts/thaisanslite/thaisanslite_r1-webfont.ttf') format('truetype');
 }
+
+@import './bower_components/octicons/octicons.scss';
+
+@import "colours.scss";
+
+//Text Alignment
+html
+{
+  font-weight: 300 !important;
+}
+
+h1,h2,h3,h4,h5,.h3,navbar-brand
+{
+  font-family: "Sukhumvit Set","ThaiSansLite","sans-serif" !important;
+}
+
+.content > h4
+{
+  font-size: 2.5em !important;
+}
+
+.row > p , .shadow-box > p , .row> ol>li, ul>li
+{
+  color: $MainFontColour;
+  font-size: 17px;
+}
+
+.row > ul
+{
+  margin-bottom: 17px !important;
+}
+
+.row > ol
+{
+  margin-bottom: 17px;
+}
+
+.sidebar-title
+{
+  font-size: 1.6em;
+}
+
+.header-text
+{
+  font-size: 3.3em;
+}
+
+.header-link > h3
+{
+  text-decoration: none !important;
+}
+
+.header-link > .header-text:hover
+{
+  color: $link-font-color;
+}
+
+.header-link:hover
+{
+  text-decoration: none;
+}
+
+.navbar-brand
+{
+  font-size: 1.8em !important;
+  color: $navbar-font-colour !important;
+}
+
+.menu-item > a
+{
+  font-size: 1em !important;
+  color: $navbar-font-colour !important;
+  font-weight:300;
+}
+
+.menu-item > a:hover
+{
+  color: $link-font-color !important;
+}
+
+.cat-tag
+{
+  color : $MainFontColour;
+  margin-right: 15px;
+  font-size: 1.2em;
+
+}
+
+.cat-tag-header
+{
+  color : $MainFontColour;
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+
+.cat-tag:hover
+{
+  text-decoration: none;
+  color: $link-font-color;
+  font-size: 1.5em;
+}
