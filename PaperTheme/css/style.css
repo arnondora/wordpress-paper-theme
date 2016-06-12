@@ -31,6 +31,12 @@ pre {
   margin: 20px 0px 20px 0px !important;
 }
 
+p > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .shadow-box, .shadow-box-sidebar, .shadow-box-page {
   box-shadow: 1px 1px 1px 1px #EEEEEE;
   border-radius: 2px;
