@@ -8,6 +8,12 @@
   src: url("../fonts/thaisansneue/thaisansneue-light-webfont.woff") format("woff"), url("fonts/thaisansneue/thaisansneue-light-webfont.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "ThaiSansLite";
+  src: url("../fonts/thaisanslite/thaisanslite_r1-webfont.eot");
+  src: url("../fonts/thaisanslite/thaisanslite_r1-webfont.woff") format("woff"), url("../fonts/thaisanslite/thaisanslite_r1-webfont.woff2") format("woff2"), url("../fonts/thaisanslite/thaisanslite_r1-webfont.ttf") format("truetype");
+}
+
 @charset "UTF-8";
 html {
   text-rendering: optimizeLegibility !important;
@@ -116,6 +122,14 @@ p > a > img {
 
 .row > ol {
   margin-bottom: 17px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "ThaiSansLite","sans-serif" !important;
+}
+
+.header-text {
+  font-size: 3.5em;
 }
 
 @font-face {
@@ -1014,6 +1028,12 @@ p > a > img {
 @font-face {
   font-family: "ThaiSansNeue_Light";
   src: url("../fonts/thaisansneue/thaisansneue-light-webfont.woff") format("woff"), url("fonts/thaisansneue/thaisansneue-light-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ThaiSansLite";
+  src: url("../fonts/thaisanslite/thaisanslite_r1-webfont.eot");
+  src: url("../fonts/thaisanslite/thaisanslite_r1-webfont.woff") format("woff"), url("../fonts/thaisanslite/thaisanslite_r1-webfont.woff2") format("woff2"), url("../fonts/thaisanslite/thaisanslite_r1-webfont.ttf") format("truetype");
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");

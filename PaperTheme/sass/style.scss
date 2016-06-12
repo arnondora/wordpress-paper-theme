@@ -131,6 +131,16 @@ p > a > img {
   margin-bottom: 17px;
 }
 
+h1,h2,h3,h4,h5
+{
+  font-family: "ThaiSansLite","sans-serif" !important;
+}
+
+.header-text
+{
+  font-size: 3.5em;
+}
+
 // Import other dependencies to compile
 @import './bower_components/octicons/octicons.scss';
 @import "font.scss";
