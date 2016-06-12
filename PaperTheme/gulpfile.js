@@ -25,6 +25,15 @@ gulp.task('concatMain', function() {
     .pipe(gulp.dest('./css'));
 });
 
+gulp.task('concatJS', function() {
+  return gulp.src(['./sass/style.scss', './bower_components/bootswatch/bootstrap.css','./bower_components/font-awesome/css/font-awesome.css'])
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(concat('style.css'))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write("./css"))
+    .pipe(gulp.dest('./css'));
+});
+
 gulp.task('watch', function(){
   gulp.watch('./sass/*.scss', ['concatMain','font']);
   // Other watchers
