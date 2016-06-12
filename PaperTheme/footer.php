@@ -15,6 +15,9 @@
 <?php wp_footer();?>
 </body>
 
+<!-- Let's font load lastly  -->
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/font.css" type="text/css" media="all" />
+
 <script async src = "<?php echo get_template_directory_uri(); ?>/js/all.min.js"></script>
 
 </html>
