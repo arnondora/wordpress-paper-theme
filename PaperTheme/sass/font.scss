@@ -104,3 +104,10 @@ h1,h2,h3,h4,h5,.h3,navbar-brand
   color: $link-font-color;
   font-size: 1.5em;
 }
+
+.wp-caption-text
+{
+  color : $caption-font-color;
+  font-size: 1.2em !important;
+  text-align: center;
+}
