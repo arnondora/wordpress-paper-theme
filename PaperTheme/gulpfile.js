@@ -13,6 +13,7 @@ gulp.task('default',['sassMain','font'], function() {
 gulp.task("font", function () {
     gulp.src("./sass/font.scss")
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write("./css"))
     .pipe(gulp.dest("./css"));
 });
