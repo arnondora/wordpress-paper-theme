@@ -36,12 +36,6 @@ pre
   @extend hr;
 }
 
-p > a > img , p > img  {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 iframe
 {
   @extend .aligncenter;
@@ -108,6 +102,12 @@ iframe
   box-shadow: 1px 1px 1px 1px $ShadowBoxShadowColour;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.size-thumbnail,.size-medium,.size-full{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .social-btn
