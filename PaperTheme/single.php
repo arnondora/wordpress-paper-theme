@@ -14,9 +14,9 @@
 				<!--Sharing Button  -->
 				<div class="row pull-right">
 					Wanna share this to social media?
-					<a class = "social-btn social-btn-facebook btn fa fa-lg fa-facebook" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>"></a>
-					<a class = "social-btn social-btn-twitter btn fa fa-lg fa-twitter" href="https://twitter.com/intent/tweet?text=<?php the_title(); echo " "; the_permalink();?>"></a>
-					<a class = "social-btn social-btn-google-plus btn fa fa-lg fa-google-plus" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"></a>
+					<a class = "social-btn social-btn-facebook btn fa fa-lg fa-facebook" target="_blank" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>"></a>
+					<a class = "social-btn social-btn-twitter btn fa fa-lg fa-twitter" target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title(); echo " "; the_permalink();?>"></a>
+					<a class = "social-btn social-btn-google-plus btn fa fa-lg fa-google-plus" target="_blank" href="https://plus.google.com/share?url=<?php the_permalink(); ?>"></a>
 				</div>
 			</div>
 		</div>
