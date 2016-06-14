@@ -43,8 +43,9 @@ iframe
 
 .container-fluid
 {
-  width: 70%;
+  width: 100%;
   min-width: 480px;
+  max-width: 800px;
 }
 
 .shadow-box
@@ -71,8 +72,10 @@ iframe
 .shadow-box-page
 {
   @extend .shadow-box;
-  padding-left :50px;
-  padding-right: 50px;
+  padding-top:10px;
+  padding-bottom: 15px;
+  padding-left :60px;
+  padding-right: 60px;
   margin-bottom: 20px;
 }
 

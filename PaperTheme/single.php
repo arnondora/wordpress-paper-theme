@@ -5,7 +5,7 @@
 	<div class="container-fluid contain-content">
 		<!-- Main Content -->
 		<head><title> <?php the_title(); echo ' - '; bloginfo('name') ?></title></head>
-		<div class = "shadow-box-page shadow-box-colour" style = "padding-top:5px;">
+		<div class = "shadow-box-page shadow-box-colour">
 			<a class = 'header-link' href="<?php the_permalink();?>" title = "<?php the_title();?>"><h3 class = "header-text text-center"><?php the_title();?></h3></a>
 			<?php if (has_post_thumbnail()) : ?>
 				<div class="row" style = "margin-top:10px;"><center><?php the_post_thumbnail('large',array('class' => 'full-width img-responsive img-thumb')); ?></center></div>
