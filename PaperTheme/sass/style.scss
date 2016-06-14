@@ -44,6 +44,7 @@ iframe
 .container-fluid
 {
   width: 70%;
+  min-width: 480px;
 }
 
 .shadow-box
@@ -73,6 +74,14 @@ iframe
   padding-left :50px;
   padding-right: 50px;
   margin-bottom: 20px;
+}
+
+.shadow-box-page-no-colour
+{
+  @extend .shadow-box-page;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-shadow: none;
 }
 
 .shadow-box-no-colour
