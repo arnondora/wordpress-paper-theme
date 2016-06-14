@@ -44,8 +44,6 @@ iframe
 .container-fluid
 {
   width: 100%;
-  min-width: 480px;
-  max-width: 800px;
 }
 
 .shadow-box
@@ -102,6 +100,7 @@ iframe
 .cat-tag-box
 {
   margin-bottom: 20px;
+  visibility: hidden;
 }
 
 .image-margin-bottom
@@ -210,4 +209,18 @@ iframe
 {
   font-size: 1.2em;
   color: $MainFontColour;
+}
+
+@media only screen and (min-width: 480px) {
+  .container-fluid
+  {
+    width: 100%;
+    min-width: 480px;
+    max-width: 800px;
+  }
+
+  .cat-tag-box
+  {
+    visibility: visible;
+  }
 }

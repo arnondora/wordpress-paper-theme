@@ -22,7 +22,7 @@
 		</div>
 
 		<!-- Tag and Category -->
-		<div class = "cat-tag-box shadow-box-page-no-colour">
+		<div class = "cat-tag-box hidden-xs shadow-box-page-no-colour">
 			<div class = "align-center">
 				<span class = "cat-tag-header">Tags & Catagories<?php echo " -> "; ?></span>
 				<?php
