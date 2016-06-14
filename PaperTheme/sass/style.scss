@@ -33,6 +33,7 @@ pre
   color: lighten($MainFontColour, 20%) !important;
   font-size: 15px !important;
   margin : 20px 0px 20px 0px !important;
+  white-space: initial;
   @extend hr;
 }
 
